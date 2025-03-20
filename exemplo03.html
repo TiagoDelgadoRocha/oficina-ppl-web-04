@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo 03</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            width: 30rem;
+            margin: 1rem auto;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 40rem;
+            min-height: 25rem;
+            margin: 1rem auto;
+            border:  1px solid gray;
+            box-shadow: .5rem .5rem .3rem .01rem grey;
+        }
+
+        .mensagem{
+            background-color: rgb(76, 0, 255);
+            color: aliceblue;
+            text-align: center;
+            flex-wrap: wrap;
+            width: 8rem;
+            height: 8rem;
+            border-radius: 100%;
+            padding: 1rem;
+            font-weight: bold;
+            margin: 1rem;
+            box-shadow: .5rem .5rem .3rem .01rem grey;
+            font-size: 3rem;
+            
+       
+        }
+      
+    </style>
+</head>
+
+<body>
+    <h1>Estrutura de Repetição<h1>
+    <div class="container">
+        <script>
+            /* 
+            Estrutura repetição: do-while( seleção)
+            variavel
+            entrada de saida de dados
+            */
+
+            var i=0,num = parseInt(prompt("informe um numero:"));
+            do{
+                document.write (`<div class="mensagem">  ${i} </div>`)
+                i++; 
+            }while( i<num)
+
+
+
+         
+        </script>
+   
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            width: 30rem;
+            margin: 1rem auto;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40rem;
+            min-height: 25rem;
+            margin: 1rem auto;
+            border:  1px solid gray;
+            box-shadow: .5rem .5rem .3rem .01rem grey;
+        }
+
+        .produto {
+            background-color: rgb(76, 0, 255);
+            color: aliceblue;
+        
+        }
+        .preco {
+            background-color: red;
+            color: whitesmoke;
+
+        }
+
+        .produto, .preco, .alerta{
+            text-align: center;
+            width: 8rem;
+            height: 8rem;
+            border-radius: .5rem;
+            padding: 1rem;
+            font-weight: bold;
+            margin: 1rem;
+            box-shadow: .5rem .5rem .3rem .01rem grey;
+        }
+        .alerta {
+           background-color: black;
+           color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Tabela de preços</h1>
+    <div class="container">
+        <script>
+            /* 
+            Estrutura condicional( seleção)
+            variavel
+            entrada de saida de dados
+            */
+
+            var produto = prompt("informe o produto:");
+
+
+            switch (produto.toLowerCase()) {
+                case "arroz":
+                    document.write("<div class='produto '> você comprou arroz.</div>");
+                    document.write("<div class='preco '>Preço: R$8,97</div>");
+                    break;
+                case "feijao":
+                    document.write("<div class='alerta'> Você digitou sem o ~. </div>");
+                case "feijão":
+                document.write("<div class='produto '> você comprou feijao.</div>");
+                document.write("<div class='preco '>Preço: R$7,57</div>");
+
+                    break;
+                case "cafe":
+                    document.write("<div class='alerta'> Você digitou sem o ´. </div>");
+                case "café":
+                    document.write("<div class='produto '>você comprou cafe.</div>");
+                    document.write("<div class='preco '>Preço: R$18,45</div>");
+                    break;
+                default:
+                  document.write("<div class='alerta'>Produto invalido </div>");
+            }
+        </script>
+    </div>
+</body>
+
+</html>
